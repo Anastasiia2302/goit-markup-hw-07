@@ -1,0 +1,110 @@
+ .page-header {
+    background-color: var(--primary-background-color);
+    line-height: 1.17;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid #ececec;
+  }
+  .site-nav {
+    display: flex;
+    align-items: center;
+  }
+  .site-nav__logo {
+    margin-right: 93px;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    color: #000000;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    
+  }
+  
+  .site-nav__logo:hover {
+    
+    text-decoration-color: var(--also-text-color);
+  }
+  .site-nav__web {
+    color: var(--also-text-color);
+  }
+  
+  
+  .site-nav__item{
+    display: flex;
+  }
+  .site-nav__link {
+    position: relative;
+    padding: 32px 0;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .site-nav__list:not(:last-child) {
+    margin-right: 50px;
+  }
+  .site-nav__link:hover
+   {
+    color: var(--also-text-color);
+    
+  }
+  .site-nav__link:focus
+   {
+    color:var(--also-text-color);
+   
+  }
+  .site-nav__link-current {
+    color: var(--also-text-color);
+  }
+  .site-nav__link--current::after  {content:"";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+  height: 4px;
+     background: var(--also-text-color);
+    border-radius: 2px;}
+  
+  .site-nav__contact{
+    display: flex;
+    margin-left: auto;
+  }
+  .site-nav__contact-link {
+    display: flex;
+    align-items:center;
+    padding: 32px 0;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color:var(--second-color-text);
+    fill:var(--second-color-text);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+  .site-nav__contact-link:hover,
+  .site-nav__icon:hover {
+    fill: var(--also-text-color);
+    color: var(--also-text-color);
+  }
+  .site-nav__contact-link:focus,
+  .site-nav__icon:focus { fill: var(--also-text-color);
+    color: var(--also-text-color);}
+  
+  .site-nav__contact-list:not(:first-child) {
+    margin-left: 50px;
+  }
+  
+  .site-nav__icon {
+    margin-right: 10px;
+   transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+  }
+  .site-nav__icon {
+    margin-right: 10px;
+    transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
