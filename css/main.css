@@ -71,10 +71,7 @@ body {
 .site-nav__list {
   display: flex;
 }
-.site-nav__list:not(:first-child) {
-  margin-left: 50px;
-}
-.site-nav__list:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 .site-nav__link {
@@ -96,6 +93,9 @@ body {
 .site-nav__contact {
   display: flex;
   margin-left: auto;
+}
+.site-nav__contact-list:not(:first-child) {
+  margin-left: 50px;
 }
 .site-nav__contact-link {
   display: flex;

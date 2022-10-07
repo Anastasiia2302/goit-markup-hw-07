@@ -24,11 +24,11 @@
     }
     &__list {
       display: flex;
-        &:not(:first-child) {
-        margin-left: 50px;}
-    &:not(:last-child) {
-      margin-right: 50px;
-    }}
+        
+    }
+   &__item:not(:last-child) {
+          margin-right: 50px;
+        }
     &__link {
       position: relative;
       padding: 32px 0;
@@ -44,7 +44,10 @@
     &__contact{
       display: flex;
       margin-left: auto;
-    }
+      }
+    &__contact-list:not(:first-child) {
+      margin-left: 50px;}
+    
     &__contact-link {
       display: flex;
       align-items:center;
