@@ -14,10 +14,10 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  &__item {
+  &__list {
     display: flex;
   }
-  &__list {
+  &__item {
     display: block;
     margin-right: 30px;
     width: 270px;

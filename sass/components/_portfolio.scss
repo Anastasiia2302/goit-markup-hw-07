@@ -16,12 +16,12 @@
       clip: rect(0 0 0 0);
       overflow: hidden;
     }
-    &__item {
+    &__list {
       display: flex;
       justify-content: center;
       margin-bottom: 50px;
     }
-    &__list{
+    &__item{
       display: block;
       margin-right: 8px;
       &:nth-child(5n) {
@@ -81,16 +81,17 @@
         
       }
      }
+     &__link:hover .description {transform: translateY(0);};
+     &__link:focus .description {transform: translateY(0);};
     }
   
    .cards-box {position: relative;
     overflow: hidden;
-    
-  }
-  .cards-box__image {
-    display: block;
-    padding: 0;
-    height: 294px;
+    &__image {
+      display: block;
+      padding: 0;
+      height: 294px;
+    }
   }
   
   .description {
@@ -104,38 +105,35 @@
     background: rgba(33, 150, 243, 0.9);
     transform: translateY(+100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &__text { font-weight: 400;
+      font-size: 18px;
+      line-height: 1.55;
+      letter-spacing: 0.03em;
+      color: var(--text-color)}
   }
-  .description__text { font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
-    color: var(--text-color)}
   
-  
-  
-  .cards__link:hover .description {transform: translateY(0);}
-  .cards__link:focus .description {transform: translateY(0);}
-  
-  .cards__text {
+ 
+  .cards-text {
     padding: 20px 24px;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
-    
+      &__subtitle{
+      color:var(--primary-text-color);
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+    }
+    &__name {
+      color: var(--second-color-text);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.87;
+      letter-spacing: 0.03em;
+    }
   }
-  .cards__subtitle{
-    color:var(--primary-text-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-  }
-  .cards__name {
-    color: var(--second-color-text);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-  }
+  
   
   

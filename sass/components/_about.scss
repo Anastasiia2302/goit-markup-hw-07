@@ -10,10 +10,10 @@
     line-height: 1.17;
     font-weight: 700;}
 
-    &__item {
+    &__list {
     display: flex;}
 
-    &__list {position: relative;
+    &__item{position: relative;
       display: block;
       margin-right: 30px;
        &:nth-child(3n) {

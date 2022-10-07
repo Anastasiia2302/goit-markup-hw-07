@@ -12,11 +12,11 @@
       line-height: 1.17;
     }
 
-    &__item {
+    &__list {
       display: flex;
       text-align: center;
     }
-  &__list{
+  &__item{
     display: block;
     margin-right: 30px;
     &:nth-child(4n) {
